@@ -1,0 +1,16 @@
+\setlength\intextsep{0pt}
+\setlength{\parskip}{5pt plus 0pt minus 0pt}
+\setcounter{secnumdepth}{5}  % Number up to subparagraph
+\setcounter{tocdepth}{5}     % Include in table of contents
+\crefname{paragraph}{Section}{Sections}
+\crefname{listing}{Code snippet}{Code snippets}
+
+\setminted{
+    bgcolor=gray!10,
+    fontsize=\small,
+    linenos,
+    frame=lines
+}
+\usemintedstyle{default}  % Remove this line or change it
+
+\renewcommand{\listingscaption}{Code snippet}

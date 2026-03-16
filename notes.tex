@@ -1,0 +1,103 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \usepackage{eurosym}
+\fancyhf{}
+\makeatletter
+\fancyhead[L]{\mtitlecover}
+\makeatother
+\fancyhead[R]{\thepage}
+
+\input{packages}
+\input{definitions}
+
+\input{/Users/michelecastellana/Documents/latex_modules/finite_elements/packages}
+\input{/Users/michelecastellana/Documents/latex_modules/finite_elements/acronyms}
+\input{/Users/michelecastellana/Documents/latex_modules/finite_elements/glossary}
+
+\input{/Users/michelecastellana/Documents/latex_modules/definitions}
+
+
+
+
+\usepackage{geometry}
+
+\geometry{
+  inner=1in,
+  outer=2.5in,
+  top=2in,
+  bottom=2in,
+  twoside
+}
+\setlength{\parskip}{10pt plus 0pt minus 0pt}
+
+\hypersetup{colorlinks=true,
+  linkcolor=red,
+  anchorcolor=red,
+  citecolor=black,
+  urlcolor=blue
+}
+\title{Set up \libnamefortitle{}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+  \item Install Git:
+        \begin{enumerate}
+          \item On Mac OS / Linux:
+                \begin{enumerate}
+                  \item Open Terminal
+                  \item Type \code{brew install git}
+                \end{enumerate}
+          \item On Windows: go to the Git \href{https://git-scm.com/install/windows}{website}, download and follow the installation instructions.
+        \end{enumerate}
+  \item Install Paraview:
+        On MacOS / Linux / Windows:
+        Go to the Paraview \href{https://www.paraview.org/download/}{website},  download the latest version for your operating system, and follow the installation instructions.
+  \item Install Docker desktop:
+        \begin{enumerate}
+          \item   On MacOS / Linux / Windows: go to the Docker \href{https://www.docker.com/products/docker-desktop/}{website}, download it and follow the installation instructions.
+          \item Start Docker desktop.
+        \end{enumerate}
+
+  \item Download \libname{}:
+        \begin{enumerate}
+          \item On Mac OS:
+                \begin{enumerate}
+                  \item Open Terminal
+                  \item \code{mkdir /Users/michele/Documents/irene}
+                  \item \code{cd /Users/michele/Documents/irene}
+                \end{enumerate}
+          \item On Windows:
+                \begin{enumerate}
+                  \item Open Terminal
+                  \item \code{mkdir C:\textbackslash{}Users\textbackslash{}michele\textbackslash{}Documents\textbackslash{}irene}
+                  \item \code{cd C:\textbackslash{}Users\textbackslash{}michele\textbackslash{}Documents\textbackslash{}irene}
+                \end{enumerate}
+        \end{enumerate}
+        \code{git clone https:\slash{}\slash{}github.com\slash{}Michele-s-team\slash{}finite\_elements.git}
+  \item Create the virtual environment:
+        \begin{enumerate}
+          \item On Mac OS / Linux:
+                \begin{enumerate}
+                  \item Open Terminal
+                  \item \code{cd /Users/michele/Documents/irene}
+                  \item \code{docker pull bluetooth83/fenics\_image}
+                \end{enumerate}
+        \end{enumerate}
+\end{enumerate}
+
+You can then start the virtual environment with
+\begin{itemize}
+  \item On Mac OS / Linux:\\
+        \code{docker run -ti -v \$(pwd):/home/fenics/shared --name fe\_1 fenics\_image}
+  \item On Windows:
+        \begin{lstlisting}[basicstyle=\ttfamily\normalsize, backgroundcolor=\color{gray!15}, breaklines=true]
+docker run -ti -v "C:\Users\michele\Documents\irene":/home/fenics/shared bluetooth83/fe_1:latest
+\end{lstlisting}
+\end{itemize}
+\end{document}
