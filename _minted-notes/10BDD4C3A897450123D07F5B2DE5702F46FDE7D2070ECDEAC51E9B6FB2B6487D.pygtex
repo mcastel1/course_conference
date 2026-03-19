@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+docker\PYG{+w}{ }run\PYG{+w}{ }\PYGZhy{}ti\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{        }\PYGZhy{}v\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}C:\PYGZbs{}Users\PYGZbs{}michele\PYGZbs{}Documents\PYGZbs{}irene\PYGZdq{}}:/home/fenics/shared\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{        }michelecastellana/fenics\PYGZus{}image:latest
+\end{Verbatim}

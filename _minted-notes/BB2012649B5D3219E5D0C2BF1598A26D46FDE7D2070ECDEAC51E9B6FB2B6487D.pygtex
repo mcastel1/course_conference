@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{cd}\PYG{+w}{ }/home/fenics/shared/steady\PYGZus{}state/no\PYGZus{}flow/
+
+\PYG{n+nv}{MESH\PYGZus{}PATH}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/home/fenics/shared/generate\PYGZus{}mesh/2d/square/solution\PYGZdq{}}
+\PYG{n+nv}{SOLUTION\PYGZus{}PATH}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/home/fenics/shared/steady\PYGZus{}state/no\PYGZus{}flow/solution\PYGZdq{}}
+rm\PYG{+w}{ }\PYGZhy{}rf\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}SOLUTION\PYGZus{}PATH}\PYG{p}{;}\PYG{+w}{ }mkdir\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}SOLUTION\PYGZus{}PATH}
+
+python3\PYG{+w}{ }solve.py\PYG{+w}{ }square\PYGZus{}a\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}MESH\PYGZus{}PATH}\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}SOLUTION\PYGZus{}PATH}
+\end{Verbatim}

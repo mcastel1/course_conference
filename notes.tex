@@ -19,6 +19,7 @@
 \input{/Users/michelecastellana/Documents/latex_modules/definitions}
 
 
+\input{preamble}
 
 
 \usepackage{geometry}
@@ -71,33 +72,87 @@
                   \item Open Terminal
                   \item \code{mkdir /Users/michele/Documents/irene} (change the path name according to your needs)
                   \item \code{cd /Users/michele/Documents/irene}
+                  \item
+                        \begin{minted}{bash}
+git clone https:\\github.com\Michele-s-team\finite_elements.git
+  chmod -R 777 finite_elements
+\end{minted}
                 \end{enumerate}
           \item On Windows:
                 \begin{enumerate}
                   \item Open Terminal
                   \item \code{mkdir C:\textbackslash{}Users\textbackslash{}michele\textbackslash{}Documents\textbackslash{}irene}
                   \item \code{cd C:\textbackslash{}Users\textbackslash{}michele\textbackslash{}Documents\textbackslash{}irene}
+                  \item
+                        \begin{minted}{bash}
+git clone https://github.com/Michele-s-team/finite_elements.git
+                  \end{minted}
                 \end{enumerate}
         \end{enumerate}
-        \code{git clone https:\slash{}\slash{}github.com\slash{}Michele-s-team\slash{}finite\_elements.git}
+
   \item Create the virtual environment:
         \begin{enumerate}
           \item On Mac OS / Linux:
                 \begin{enumerate}
                   \item Open Terminal
                   \item \code{cd /Users/michele/Documents/irene}
-                  \item \code{sudo docker pull bluetooth83/fenics\_image}
+                  \item \code{sudo docker pull michelecastellana/fenics\_image}
+                \end{enumerate}
+
+          \item On Windows
+                \begin{enumerate}
+                  \item \code{cd C:\textbackslash{}Users\textbackslash{}michele\textbackslash{}Documents\textbackslash{}irene}
+                  \item \code{docker pull michelecastellana/fenics\_image}
                 \end{enumerate}
         \end{enumerate}
 \end{enumerate}
 
+
+
 You can then start the virtual environment with
 \begin{itemize}
   \item On Mac OS / Linux:\\
-        \code{docker run -ti -v \$(pwd):/home/fenics/shared -{}-name fe\_1 fenics\_image}
+
+
+        \begin{minted}{bash}
+docker run -ti \
+          -v $(pwd)/finite_elements:/home/fenics/shared \
+          --name fe_1 fenics_image
+\end{minted}
+
   \item On Windows:
-        \begin{lstlisting}[basicstyle=\ttfamily\normalsize, backgroundcolor=\color{gray!15}, breaklines=true]
-docker run -ti -v "C:\Users\michele\Documents\irene":/home/fenics/shared bluetooth83/fe_1:latest
-\end{lstlisting}
+        \begin{minted}{bash}
+docker run -ti \
+        -v "C:\Users\michele\Documents\irene":/home/fenics/shared \
+        michelecastellana/fenics_image:latest
+\end{minted}
+
+
+  \item Make a test run:
+        \begin{itemize}
+          \item Generate the mesh:
+                \begin{minted}{bash}
+cd /home/fenics/shared/generate_mesh/2d/square
+
+PARAMETERS_PATH="/home/fenics/shared/generate_mesh/2d/square"
+MESH_PATH="/home/fenics/shared/generate_mesh/2d/square/solution"
+rm -rf $MESH_PATH; mkdir $MESH_PATH
+
+python3 generate_square_mesh.py \
+/home/fenics/shared/generate_mesh/2d/square \
+/home/fenics/shared/generate_mesh/2d/square/solution
+
+\end{minted}
+          \item Solve the variational problem:
+                \begin{minted}{bash}
+cd /home/fenics/shared/steady_state/no_flow/
+
+MESH_PATH="/home/fenics/shared/generate_mesh/2d/square/solution"
+SOLUTION_PATH="/home/fenics/shared/steady_state/no_flow/solution"
+rm -rf $SOLUTION_PATH; mkdir $SOLUTION_PATH
+
+python3 solve.py square_a $MESH_PATH $SOLUTION_PATH
+                \end{minted}
+        \end{itemize}
 \end{itemize}
 \end{document}

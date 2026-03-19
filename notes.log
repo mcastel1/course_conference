@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.5)  19 MAR 2026 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.5)  26 MAR 2026 09:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1234,7 +1234,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 56.
 \c@g@acro@fem@int=\count453
 \c@g@acro@pde@int=\count454
 \c@g@acro@fenics@int=\count455
-) (/Users/michelecastellana/Documents/latex_modules/finite_elements/glossary.tex (/Users/michelecastellana/Documents/latex_modules/finite_elements/definitions.tex)) (/Users/michelecastellana/Documents/latex_modules/definitions.tex) (/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+) (/Users/michelecastellana/Documents/latex_modules/finite_elements/glossary.tex (/Users/michelecastellana/Documents/latex_modules/finite_elements/definitions.tex)) (/Users/michelecastellana/Documents/latex_modules/definitions.tex) (./preamble.tex) (/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -1252,10 +1252,10 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen374
 \Gm@dimlist=\toks63
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 40.
+Package hyperref Info: Option `colorlinks' set `true' on input line 41.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 45.
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 45.
+(Font)              scaled to size 10.0pt on input line 46.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 46.
 runsystem(command -v pygmentize && touch notes.aex)...executed.
 
 runsystem(rm notes.aex)...executed.
@@ -1263,50 +1263,50 @@ runsystem(rm notes.aex)...executed.
  (./notes.aux)
 \openout1 = `notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 45.
-LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 45.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 46.
+LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 46.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 45.
-LaTeX Font Info:    Trying to load font information for U+npxexa on input line 45.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 46.
+LaTeX Font Info:    Trying to load font information for U+npxexa on input line 46.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 45.
-LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 45.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 46.
+LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 46.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 45.
-LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 45.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 46.
+LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 46.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Info: Command `\dddot' is already robust on input line 45.
-LaTeX Info: Command `\ddddot' is already robust on input line 45.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Info: Command `\dddot' is already robust on input line 46.
+LaTeX Info: Command `\ddddot' is already robust on input line 46.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count459
@@ -1331,28 +1331,28 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
  (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 45.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 46.
 \c@lstlisting=\count467
-LaTeX Info: Redefining \microtypecontext on input line 45.
-Package microtype Info: Applying patch `item' on input line 45.
-Package microtype Info: Applying patch `toc' on input line 45.
-Package microtype Info: Applying patch `eqnum' on input line 45.
-Package microtype Info: Applying patch `footnote' on input line 45.
-Package microtype Info: Applying patch `verbatim' on input line 45.
+LaTeX Info: Redefining \microtypecontext on input line 46.
+Package microtype Info: Applying patch `item' on input line 46.
+Package microtype Info: Applying patch `toc' on input line 46.
+Package microtype Info: Applying patch `eqnum' on input line 46.
+Package microtype Info: Applying patch `footnote' on input line 46.
+Package microtype Info: Applying patch `verbatim' on input line 46.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 45.
+LaTeX Info: Redefining \showhyphens on input line 46.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-Package hyperref Info: Link coloring ON on input line 45.
+Package hyperref Info: Link coloring ON on input line 46.
  (./notes.out) (./notes.out)
 \@outlinefile=\write7
 \openout7 = `notes.out'.
@@ -1374,15 +1374,15 @@ Configuring pdfsync
 **** pdfsync.sty: started
 \symgns@font=\mathgroup13
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/zpltlf/m/n --> TS1/zpltlf/b/n on input line 45.
-Package gensymb Info: Math companion symbols declared on input line 45.
-LaTeX Info: Redefining \degree on input line 45.
-LaTeX Info: Redefining \celsius on input line 45.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 45.
-LaTeX Info: Redefining \ohm on input line 45.
-Package gensymb Info: Using \textohm for \ohm on input line 45.
-LaTeX Info: Redefining \micro on input line 45.
-Package gensymb Info: Using \textmu for \micro on input line 45.
+(Font)                  TS1/zpltlf/m/n --> TS1/zpltlf/b/n on input line 46.
+Package gensymb Info: Math companion symbols declared on input line 46.
+LaTeX Info: Redefining \degree on input line 46.
+LaTeX Info: Redefining \celsius on input line 46.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 46.
+LaTeX Info: Redefining \ohm on input line 46.
+Package gensymb Info: Using \textohm for \ohm on input line 46.
+LaTeX Info: Redefining \micro on input line 46.
+Package gensymb Info: Using \textmu for \micro on input line 46.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1422,59 +1422,88 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 46.
+(Font)              scaled to size 17.28pt on input line 47.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 46.
-LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 54.
+(Font)              scaled to size 12.0pt on input line 47.
+LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 55.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 54.
+(Font)              scaled to size 10.0pt on input line 55.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `npxtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+\openout3 = `notes.pyg'.
 
-Overfull \hbox (17.18617pt too wide) in paragraph at lines 82--83
-[][][][][][][][] 
- []
+ (./_minted-notes/default.pygstyle) (./_minted-notes/78A3BB7B96E828AF191E49028CCCEC5146FDE7D2070ECDEAC51E9B6FB2B6487D.pygtex
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/npxtt/b/n' in size <9> not available
+(Font)              Font shape `T1/npxtt/bx/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/npxtt/bx/n' will be
+(Font)              scaled to size 9.0pt on input line 2.
+)
+\openout3 = `notes.pyg'.
 
-[1
+ (./_minted-notes/347BD00ED0EEC3D9342AB01F7D2AF32246FDE7D2070ECDEAC51E9B6FB2B6487D.pygtex) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+zpltlf on input line 96.
+LaTeX Font Info:    Trying to load font information for TS1+zpltlf on input line 114.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 96.
+(Font)              scaled to size 10.0pt on input line 114.
 
-Overfull \hbox (48.68608pt too wide) in paragraph at lines 96--98
-[][][][][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
  []
 
-[2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}] (./notes.aux)
+\openout3 = `notes.pyg'.
+
+(./_minted-notes/656308B8474D5A42B67364A06DEFDF2246FDE7D2070ECDEAC51E9B6FB2B6487D.pygtex)
+\openout3 = `notes.pyg'.
+
+runsystem(pygmentize -l 'bash' -f latex -P commandprefix=PYG -F tokenmerge -P stripnl='False' -o _minted-notes/10BDD4C3A897450123D07F5B2DE5702F46FDE7D2070ECDEAC51E9B6FB2B6487D.pygtex notes.pyg)...executed.
+
+ (./_minted-notes/10BDD4C3A897450123D07F5B2DE5702F46FDE7D2070ECDEAC51E9B6FB2B6487D.pygtex)
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 133.
+\openout3 = `notes.pyg'.
+
+ (./_minted-notes/4F83DB451F9CA37C495C76BE9853CD5246FDE7D2070ECDEAC51E9B6FB2B6487D.pygtex)
+\openout3 = `notes.pyg'.
+
+ [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}] (./_minted-notes/BB2012649B5D3219E5D0C2BF1598A26D46FDE7D2070ECDEAC51E9B6FB2B6487D.pygtex)
+runsystem(rm _minted-notes/3A88C603C8EB9D41B6B433BCD7C056F646FDE7D2070ECDEAC51E9B6FB2B6487D.pygtex)...executed.
+
+ [3] (./notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+runsystem(rm notes.pyg)...executed.
+
  ) 
 Here is how much of TeX's memory you used:
- 51870 strings out of 474116
- 1067737 string characters out of 5743683
+ 51835 strings out of 474116
+ 1072389 string characters out of 5743683
  1954187 words of memory out of 5000000
- 73436 multiletter control sequences out of 15000+600000
- 576267 words of font info for 73 fonts, out of 8000000 for 9000
+ 73359 multiletter control sequences out of 15000+600000
+ 583158 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,31n,120p,2477b,1451s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
-Output written on notes.pdf (2 pages, 48415 bytes).
+ 104i,31n,120p,2477b,1685s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
+Output written on notes.pdf (3 pages, 61788 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 28 named destinations out of 1000 (max. 500000)
- 8813 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 110 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 32 named destinations out of 1000 (max. 500000)
+ 13933 words of extra memory for PDF output out of 14400 (max. 10000000)
 
