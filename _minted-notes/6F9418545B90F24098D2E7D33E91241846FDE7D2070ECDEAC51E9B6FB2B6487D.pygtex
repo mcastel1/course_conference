@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+mkdir\PYG{+w}{ }/path/where/to/install/
+\PYG{n+nb}{cd}\PYG{+w}{ }/path/where/to/install/
+\end{Verbatim}

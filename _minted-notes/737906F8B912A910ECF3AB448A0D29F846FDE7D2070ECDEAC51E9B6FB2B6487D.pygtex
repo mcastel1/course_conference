@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+sudo\PYG{+w}{ }apt\PYGZhy{}get\PYG{+w}{ }update
+sudo\PYG{+w}{ }apt\PYGZhy{}get\PYG{+w}{ }install\PYG{+w}{ }paraview
+\end{Verbatim}

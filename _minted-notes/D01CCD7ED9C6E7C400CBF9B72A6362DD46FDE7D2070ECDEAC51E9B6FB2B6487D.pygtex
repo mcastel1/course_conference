@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{cd}\PYG{+w}{ }C:\PYG{l+s+se}{\PYGZbs{}p}ath\PYG{l+s+se}{\PYGZbs{}w}here\PYG{l+s+se}{\PYGZbs{}t}o\PYG{l+s+se}{\PYGZbs{}i}nstall
+docker\PYG{+w}{ }pull\PYG{+w}{ }michelecastellana/fenics\PYGZus{}image
+\end{Verbatim}

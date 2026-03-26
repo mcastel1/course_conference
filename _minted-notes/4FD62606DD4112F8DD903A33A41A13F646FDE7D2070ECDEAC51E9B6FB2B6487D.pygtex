@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{cd}\PYG{+w}{ }/path/where/to/install/
+sudo\PYG{+w}{ }docker\PYG{+w}{ }pull\PYG{+w}{ }michelecastellana/fenics\PYGZus{}image
+sudo\PYG{+w}{ }apt\PYG{+w}{ }install\PYG{+w}{ }\PYGZhy{}y\PYG{+w}{ }qemu\PYGZhy{}user\PYGZhy{}static
+sudo\PYG{+w}{ }docker\PYG{+w}{ }run\PYG{+w}{ }\PYGZhy{}\PYGZhy{}privileged\PYG{+w}{ }\PYGZhy{}\PYGZhy{}rm\PYG{+w}{ }tonistiigi/binfmt\PYG{+w}{ }\PYGZhy{}\PYGZhy{}install\PYG{+w}{ }all
+\end{Verbatim}

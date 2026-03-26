@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{                                    }\PYG{n}{sudo}\PYG{+w}{ }\PYG{n}{docker}\PYG{+w}{ }\PYG{n}{run}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{n}{privileged}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{n}{rm}\PYG{+w}{ }\PYG{n}{tonistiigi}\PYG{o}{/}\PYG{n}{binfmt}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{n}{install}\PYG{+w}{ }\PYG{n}{all}
+\end{Verbatim}

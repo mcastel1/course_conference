@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+mkdir\PYG{+w}{ }C:path\PYG{l+s+se}{\PYGZbs{}w}here\PYG{l+s+se}{\PYGZbs{}t}o\PYG{l+s+se}{\PYGZbs{}i}nstall
+\PYG{n+nb}{cd}\PYG{+w}{ }C:path\PYG{l+s+se}{\PYGZbs{}w}here\PYG{l+s+se}{\PYGZbs{}t}o\PYG{l+s+se}{\PYGZbs{}i}nstall
+git\PYG{+w}{ }clone\PYG{+w}{ }https://github.com/Michele\PYGZhy{}s\PYGZhy{}team/finite\PYGZus{}elements.git
+\end{Verbatim}

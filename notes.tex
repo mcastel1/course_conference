@@ -26,7 +26,7 @@
 
 \geometry{
   inner=1in,
-  outer=2.5in,
+  outer=1in,
   top=2in,
   bottom=2in,
   twoside
@@ -40,111 +40,62 @@
   urlcolor=blue
 }
 \title{Set up \libnamefortitle{}}
-\author{}
+\author{Michele Castellana}
 \date{}
 
 \begin{document}
 \maketitle
 
-\begin{enumerate}
-  \item Install Git:
-        \begin{enumerate}
-          \item On Mac OS / Linux:
-                \begin{enumerate}
-                  \item Open Terminal
-                  \item Type \code{apt-get install git}
-                \end{enumerate}
-          \item On Windows: go to the Git \href{https://git-scm.com/install/windows}{website}, download and follow the installation instructions.
-        \end{enumerate}
-  \item Install Paraview:
-        On MacOS / Linux / Windows:
-        Go to the Paraview \href{https://www.paraview.org/download/}{website},  download the latest version for your operating system, and follow the installation instructions.
-  \item Install Docker desktop:
-        \begin{enumerate}
-          \item   On MacOS / Linux / Windows: go to the Docker \href{https://www.docker.com/products/docker-desktop/}{website}, download it and follow the installation instructions.
-          \item Start Docker desktop.
-        \end{enumerate}
+Note: \textit{These installation instructions are not a substitute for basic knowledge of command-line instructions nor for installation guidelines of third-party software, and they come with no warranty---use them at your own risk.}
 
-  \item Download \libname{}:
-        \begin{enumerate}
-          \item On Mac OS:
-                \begin{enumerate}
-                  \item Open Terminal
-                  \item \code{mkdir /Users/michele/Documents/irene} (change the path name according to your needs)
-                  \item \code{cd /Users/michele/Documents/irene}
-                  \item
-                        \begin{minted}{bash}
-git clone https:\\github.com\Michele-s-team\finite_elements.git
-  chmod -R 777 finite_elements
-\end{minted}
-                \end{enumerate}
-          \item On Windows:
-                \begin{enumerate}
-                  \item Open Terminal
-                  \item \code{mkdir C:\textbackslash{}Users\textbackslash{}michele\textbackslash{}Documents\textbackslash{}irene}
-                  \item \code{cd C:\textbackslash{}Users\textbackslash{}michele\textbackslash{}Documents\textbackslash{}irene}
-                  \item
-                        \begin{minted}{bash}
+\begin{enumerate}
+      \item \windows
+            \begin{enumerate}
+                  \item Install Git: Go \href{https://git-scm.com/install/windows}{here}, download and follow the installation instructions.
+                  \item Install Paraview:                  go  \href{https://www.paraview.org/download/}{here},  download and follow the installation instructions.
+                  \item Install Docker Desktop
+                        \begin{enumerate}
+                              \item                   Go   \href{https://www.docker.com/products/docker-desktop/}{here}, download  and follow the installation instructions
+                              \item Start Docker desktop.
+                        \end{enumerate}
+                  \item Download \libname{}:
+                        \begin{enumerate}
+                              \item Open Terminal
+                              \item Type (on a network with no firewalls/restrictions)
+                                    \begin{minted}{bash}
+mkdir C:path\where\to\install
+cd C:path\where\to\install
 git clone https://github.com/Michele-s-team/finite_elements.git
                   \end{minted}
-                \end{enumerate}
-        \end{enumerate}
-
-  \item Create the virtual environment:
-        \begin{enumerate}
-          \item On Mac OS / Linux:
-                \begin{enumerate}
-                  \item Open Terminal
-                  \item \code{cd /Users/michele/Documents/irene}
-                  \item \code{sudo docker pull michelecastellana/fenics\_image}
-                \end{enumerate}
-
-          \item On Windows
-                \begin{enumerate}
-                  \item \code{cd C:\textbackslash{}Users\textbackslash{}michele\textbackslash{}Documents\textbackslash{}irene}
-                  \item \code{docker pull michelecastellana/fenics\_image}
-                \end{enumerate}
-        \end{enumerate}
-\end{enumerate}
-
-
-
-You can then start the virtual environment with
-\begin{itemize}
-  \item On Mac OS / Linux:\\
-
-
-        \begin{minted}{bash}
+                        \end{enumerate}
+                  \item Crate the virtual environment
+                        \begin{minted}{bash}
+cd C:\path\where\to\install
+docker pull michelecastellana/fenics_image
+                                    \end{minted}
+                  \item Start the virtual environment and enter it:
+                        \begin{minted}{bash}
 docker run -ti \
-          -v $(pwd)/finite_elements:/home/fenics/shared \
-          --name fe_1 fenics_image
-\end{minted}
-
-  \item On Windows:
-        \begin{minted}{bash}
-docker run -ti \
-        -v "C:\Users\michele\Documents\irene":/home/fenics/shared \
+        -v "C:path\where\to\install\finite_elemens":/home/fenics/shared \
         michelecastellana/fenics_image:latest
 \end{minted}
-
-
-  \item Make a test run:
-        \begin{itemize}
-          \item Generate the mesh:
-                \begin{minted}{bash}
+                  \item \label{test_run} Make a test run:
+                        \begin{enumerate}
+                              \item Generate the mesh:
+                                    \begin{minted}{bash}
 cd /home/fenics/shared/generate_mesh/2d/square
 
 PARAMETERS_PATH="/home/fenics/shared/generate_mesh/2d/square"
 MESH_PATH="/home/fenics/shared/generate_mesh/2d/square/solution"
 rm -rf $MESH_PATH; mkdir $MESH_PATH
 
-python3 generate_square_mesh.py \
+python3 generate_mesh.py \
 /home/fenics/shared/generate_mesh/2d/square \
 /home/fenics/shared/generate_mesh/2d/square/solution
 
 \end{minted}
-          \item Solve the variational problem:
-                \begin{minted}{bash}
+                              \item Solve the variational problem:
+                                    \begin{minted}{bash}
 cd /home/fenics/shared/steady_state/no_flow/
 
 MESH_PATH="/home/fenics/shared/generate_mesh/2d/square/solution"
@@ -153,6 +104,121 @@ rm -rf $SOLUTION_PATH; mkdir $SOLUTION_PATH
 
 python3 solve.py square_a $MESH_PATH $SOLUTION_PATH
                 \end{minted}
-        \end{itemize}
-\end{itemize}
+                        \end{enumerate}
+            \end{enumerate}
+
+
+
+      \item \linux
+            \begin{enumerate}
+                  \item Install Git:
+                        \begin{enumerate}
+                              \item Open Terminal
+                              \item Type
+                                    \begin{minted}{bash}
+sudo apt-get install git 
+                                    \end{minted}
+                        \end{enumerate}
+                  \item Install Paraview:
+                        \begin{minted}{bash}
+sudo apt-get update 
+sudo apt-get install paraview
+            \end{minted}
+                  \item Install Docker Desktop: go  \href{https://www.docker.com/products/docker-desktop/}{here}, download Docker Deesktop and follow the installation instructions.
+                  \item Download \libname{}:
+                        \begin{enumerate}
+                              \item Open Terminal
+                              \item
+                                    \begin{minted}{bash}
+mkdir /path/where/to/install/
+cd /path/where/to/install/
+                              \end{minted}
+                              \item Run (on a network with no firewalls/restrictions):
+                                    \begin{minted}{bash}
+sudo  git clone https://github.com/Michele-s-team/finite_elements.git
+sudo chmod -R 777 finite_elements
+                                    \end{minted}
+                        \end{enumerate}
+                  \item Create the virtual environment:
+                        \begin{enumerate}
+                              \item Open Terminal
+                              \item \begin{minted}{bash}
+cd /path/where/to/install/
+sudo docker pull michelecastellana/fenics_image
+sudo apt install -y qemu-user-static
+sudo docker run --privileged --rm tonistiigi/binfmt --install all                        
+                  \end{minted}
+
+                        \end{enumerate}
+
+                  \item Start the virtual environment and enter it
+                        \begin{minted}{bash}
+sudo docker run -ti -v $(pwd)/finite_elements:/home/fenics/shared \
+--name fe_1 michelecastellana/fenics_image:latest
+\end{minted}
+
+
+                  \item Make a test run with \cref{test_run}.
+            \end{enumerate}
+
+      \item \macos
+            \begin{enumerate}
+                  \item Install Git:
+                        \begin{enumerate}
+                              \item Open Terminal
+                              \item Type
+                                    \begin{minted}{bash}
+/bin/bash -c \
+"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/opt/homebrew/bin/brew  install git
+                                    \end{minted}
+                        \end{enumerate}
+
+                  \item Install Paraview:                  go  \href{https://www.paraview.org/download/}{here},  download and follow the installation instructions
+                  \item Install Docker Desktop
+                        \begin{enumerate}
+                              \item                   Go   \href{https://www.docker.com/products/docker-desktop/}{here}, download  and follow the installation instructions
+                              \item Start Docker desktop.
+                        \end{enumerate}
+
+                  \item Download \libname{}:
+                        \begin{enumerate}
+                              \item Open Terminal
+                              \item
+                                    \begin{minted}{bash}
+mkdir /path/where/to/install/
+cd /path/where/to/install/
+                              \end{minted}
+                              \item Run (on a network with no firewalls/restrictions)
+                                    \begin{minted}{bash}
+git clone https://github.com/Michele-s-team/finite_elements.git
+sudo chmod -R 777 finite_elements
+                                    \end{minted}
+                        \end{enumerate}
+                  \item Create the virtual environment:
+                        \begin{enumerate}
+                              \item Open Terminal
+                              \item \begin{minted}{bash}
+cd /path/where/to/install/
+sudo docker pull michelecastellana/fenics_image
+                  \end{minted}
+
+                        \end{enumerate}
+
+                  \item Start the virtual environment and enter it
+                        \begin{minted}{bash}
+docker run -ti \
+          -v $(pwd)/finite_elements:/home/fenics/shared \
+          --name fe_1 fenics_image
+\end{minted}
+                  \item Make a test run with \cref{test_run}.
+            \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
 \end{document}

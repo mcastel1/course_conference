@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+/bin/bash\PYG{+w}{ }\PYGZhy{}c\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}}\PYG{k}{\PYGZdl{}(}curl\PYG{+w}{ }\PYGZhy{}fsSL\PYG{+w}{ }https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh\PYG{k}{)}\PYG{l+s+s2}{\PYGZdq{}}
+/opt/homebrew/bin/brew\PYG{+w}{ }install\PYG{+w}{ }git
+\end{Verbatim}
