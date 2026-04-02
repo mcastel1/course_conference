@@ -1,5 +1,5 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 docker\PYG{+w}{ }run\PYG{+w}{ }\PYGZhy{}ti\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
 \PYG{+w}{          }\PYGZhy{}v\PYG{+w}{ }\PYG{k}{\PYGZdl{}(}\PYG{n+nb}{pwd}\PYG{k}{)}/finite\PYGZus{}elements:/home/fenics/shared\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
-\PYG{+w}{          }\PYGZhy{}\PYGZhy{}name\PYG{+w}{ }fe\PYGZus{}1\PYG{+w}{ }fenics\PYGZus{}image
+\PYG{+w}{          }\PYGZhy{}\PYGZhy{}name\PYG{+w}{ }fe\PYGZus{}1\PYG{+w}{ }michelecastellana/fenics\PYGZus{}image
 \end{Verbatim}

@@ -49,10 +49,10 @@
 Note: \textit{These installation instructions are not a substitute for basic knowledge of command-line instructions nor for installation guidelines of third-party software, and they come with no warranty---use them at your own risk.}
 
 \begin{enumerate}
-      \item \windows
+      \item For \windows
             \begin{enumerate}
                   \item Install Git: Go \href{https://git-scm.com/install/windows}{here}, download and follow the installation instructions.
-                  \item Install Paraview:                  go  \href{https://www.paraview.org/download/}{here},  download and follow the installation instructions.
+                  \item Install Paraview:                  Go  \href{https://www.paraview.org/download/}{here},  download and follow the installation instructions.
                   \item Install Docker Desktop
                         \begin{enumerate}
                               \item                   Go   \href{https://www.docker.com/products/docker-desktop/}{here}, download  and follow the installation instructions
@@ -63,8 +63,8 @@ Note: \textit{These installation instructions are not a substitute for basic kno
                               \item Open Terminal
                               \item Type (on a network with no firewalls/restrictions)
                                     \begin{minted}{bash}
-mkdir C:path\where\to\install
-cd C:path\where\to\install
+mkdir C:\path\where\to\install
+cd C:\path\where\to\install
 git clone https://github.com/Michele-s-team/finite_elements.git
                   \end{minted}
                         \end{enumerate}
@@ -75,8 +75,8 @@ docker pull michelecastellana/fenics_image
                                     \end{minted}
                   \item Start the virtual environment and enter it:
                         \begin{minted}{bash}
-docker run -ti \
-        -v "C:path\where\to\install\finite_elemens":/home/fenics/shared \
+docker run -ti `
+        -v "C:/path/where/to/install/finite_elements:/home/fenics/shared" `
         michelecastellana/fenics_image:latest
 \end{minted}
                   \item \label{test_run} Make a test run:
@@ -109,7 +109,9 @@ python3 solve.py square_a $MESH_PATH $SOLUTION_PATH
 
 
 
-      \item \linux
+
+
+      \item For \linux
             \begin{enumerate}
                   \item Install Git:
                         \begin{enumerate}
@@ -161,7 +163,7 @@ sudo docker run -ti -v $(pwd)/finite_elements:/home/fenics/shared \
                   \item Make a test run with \cref{test_run}.
             \end{enumerate}
 
-      \item \macos
+      \item For \macos
             \begin{enumerate}
                   \item Install Git:
                         \begin{enumerate}
@@ -209,7 +211,7 @@ sudo docker pull michelecastellana/fenics_image
                         \begin{minted}{bash}
 docker run -ti \
           -v $(pwd)/finite_elements:/home/fenics/shared \
-          --name fe_1 fenics_image
+          --name fe_1 michelecastellana/fenics_image
 \end{minted}
                   \item Make a test run with \cref{test_run}.
             \end{enumerate}
