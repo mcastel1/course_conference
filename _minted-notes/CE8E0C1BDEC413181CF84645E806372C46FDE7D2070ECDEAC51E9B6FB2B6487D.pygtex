@@ -3,7 +3,7 @@
 
 \PYG{n+nv}{PARAMETERS\PYGZus{}PATH}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/home/fenics/shared/generate\PYGZus{}mesh/2d/square\PYGZdq{}}
 \PYG{n+nv}{MESH\PYGZus{}PATH}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/home/fenics/shared/generate\PYGZus{}mesh/2d/square/solution\PYGZdq{}}
-rm\PYG{+w}{ }\PYGZhy{}rf\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}MESH\PYGZus{}PATH}\PYG{p}{;}\PYG{+w}{ }mkdir\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}MESH\PYGZus{}PATH}
+rm\PYG{+w}{  }\PYGZhy{}rf\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}MESH\PYGZus{}PATH}\PYG{p}{;}\PYG{+w}{ }mkdir\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}MESH\PYGZus{}PATH}
 
 python3\PYG{+w}{ }generate\PYGZus{}mesh.py\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
 /home/fenics/shared/generate\PYGZus{}mesh/2d/square\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}

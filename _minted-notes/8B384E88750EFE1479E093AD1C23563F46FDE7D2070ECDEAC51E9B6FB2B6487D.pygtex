@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+docker\PYG{+w}{ }run\PYG{+w}{ }\PYGZhy{}ti\PYG{+w}{ }\PYGZhy{}\PYGZhy{}name\PYG{+w}{ }fe\PYGZus{}1\PYG{+w}{ }\PYGZhy{}v\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}C:/path/where/to/install/finite\PYGZus{}elements:/home/fenics/shared\PYGZdq{}}\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{ }michelecastellana/fenics\PYGZus{}image:latest
+\end{Verbatim}
